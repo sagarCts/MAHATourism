@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<img src="file:///c://Users//jarvis//Desktop//mah.png">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<meta charset="ISO-8859-1">
+	<title>Maharashtra Tourism</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+	
+	<style>
+	.navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+	
+	.navbar a {
+	  float: left;
+	  font-size: 16px;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+	
+	.dropdown {
+	  float: left;
+	  overflow: hidden;
+	}
+	
+	.dropdown .dropbtn {
+	  font-size: 16px;  
+	  border: none;
+	  outline: none;
+	  color: white;
+	  padding: 14px 16px;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0;
+	}
+	
+	.navbar a:hover, .dropdown:hover .dropbtn {
+	  background-color: red;
+	}
+	
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+	
+	.dropdown-content a {
+	  float: none;
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	}
+	
+	.dropdown-content a:hover {
+	  background-color: #ddd;
+	}
+	
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+		
+	    /* Container needed to position the overlay. Adjust the width as needed */
+		.container {
+		  position: relative;
+		  width: 50%;
+		}
+		
+		/* Make the image to responsive */
+		.image {
+		  width: 100%;
+		  height: auto;
+		}
+		
+		/* The overlay effect (full height and width) - lays on top of the container and over the image */
+		.overlay {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  background-color: #008CBA;
+		  overflow: hidden;
+		  width: 100%;
+		  height: 100%;
+		  transform: scale(0);
+		  transition: .3s ease;
+		}
+		
+		/* When you mouse over the container, the overlay text will "zoom" in display */
+		.container:hover .overlay {
+		  transform: scale(1);
+		}
+		
+		/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+		.text {
+		  color: white;
+		  font-size: 40px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		} 
+		
+		#first {
+		    width: 500px;
+		    float: left;
+		    height: auto;
+		    margin: 70px;
+		    object-fit: contain;
+		}
+		#second {
+		    width: 500px;
+		    float: left;
+		    height: auto;
+		    top: 75px;
+		    object-fit: contain;
+		}
+		#footer {
+	    position : absolute;
+	    bottom : 0;
+	    height : 40px;
+	    margin-top : 40px;
+	  }
+	</style>
+</head>
+<body style="width: 1200px;height: 600px; background-size: cover;background-position: center center;background-repeat: no-repeat;text-align: center;margin: auto;padding: 0;" background="bak.jpg">
+  <audio autoplay loop>
+<source src = "anthem.mp3" type = "audio/mp3">
+</audio>
+  <div class="navbar">
+	  <a href="https://en.wikipedia.org/wiki/Maharashtra">Explore Maharastra</a>
+	  <a href="#news">What's new?</a>
+	  <a href="#home">Contact Us</a>
+	  <a href="Login.jsp" target="_self">Sign In</a>
+	  <div class="dropdown">
+	    <button class="dropbtn">Bookings 
+	      <span class="caret"></span>
+	    </button>
+	    <div class="dropdown-content">
+	      <a href="https://www.trivago.in/">Trivago</a>
+	      <a href="https://www.makemytrip.com/">MakeMyTrip</a>
+	    </div>
+	  </div> 
+   </div>
+   <a href="pune-page.html">
+		<div class="container" id="first">
+			<img src="pune4.jpg" alt="Pune" class="image">
+			<div class="overlay">
+	  			<div class="text">Pune</div>
+			</div>
+		</div>
+	</a><br></br><br></br><br></br><br></br><br></br><br></br>
+	<a href="mumbai-page.html">	
+		<div class="container" id="second">
+			<img src="maxresdefault.jpg" alt="Mumbai" class="image">
+			<div class="overlay">
+				<div class="text">Mumbai</div>
+			</div>
+		</div>
+	</a>	
+	<footer>
+	<div id="footer" style="width:800px; margin:0 auto;"><small>&copy; A project by Amruta Bakhteyar Sagar
+			AASB.co 2019,All Rights Reserved</small></div>
+	</footer>
+</body>
+</html>

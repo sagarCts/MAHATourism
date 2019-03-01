@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+{
+background-image:url('C:\Users\shree1\Desktop'); > 
+ <img src="is (2).jpg" alt="Italian Trulli";}
+
+
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+
+<h2>NEAR BY FORTS FROM MUMBAI</h2>
+<p>Click here for the complete fort details</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, ' Murud-Janjira Fort')" id="defaultOpen"> Murud-Janjira Fort</button>
+  <button class="tablinks" onclick="openCity(event, 'Pratapgad Fort')">Pratapgad Fort</button>
+  <button class="tablinks" onclick="openCity(event, 'Rajmachi Fort')">Rajmachi Fort</button>
+</div>
+<div id="Murud-Janjira Fort" class="tabcontent">
+  <h3> Murud-Janjira Fort </h3>
+  <p>Murud-Janjira Fort is situated on an oval-shaped rock off the Arabian Sea coast near the port town of Murud, 165 km (103 mi) south of Mumbai. Janjira is considered one of the strongest marine forts in India. The fort is approached by sailboats from Rajapuri jetty.Janjira from the outside
+  The main gate of the fort faces Rajapuri on the shore and can be seen only when one is about 40 feet (12 m) away from it. It has a small postern gate towards the open sea for escape.Entry Gate into Murud Janjira Fort. Accessible by ferry.The fort has 26 rounded bastions, still intact. There are many cannons of native and European make rusting on the bastions. Now in ruins, the fort in its heyday was a full-fledged living fort with all the necessary facilities, e.g., palaces, quarters for officers, mosque, two small 60-foot-deep (18 m) natural fresh water lakes, etc.On the outer wall flanking the main gate, there is a sculpture depicting a tiger-like beast clasping elephants in its claws.
+  </p>
+  </div>
+
+<div id="Pratapgad Fort" class="tabcontent">
+  <h3>Pratapgad Fort</h3>
+  <p>Shivneri is known to be a place of Buddhist dominion from the 1st century AD. The caves, rock-cut architecture and water system indicate presence of habitation from the 1st century. Shivneri got its name as it was under the possession of the Yadavas of Devagiri. This fort was mainly used to guard the old trading route from Desh to the port city of Kalyan. The place passed on to the Bahmani Sultanate after the weakening of Delhi Sultanate during the 15th century and it then passed on to the Ahmadnagar Sultanate in the 16th century. In 1595, a Maratha chief named Maloji Bhonsle, the grandfather of Chhatrapati Shivaji Bhosale, was enabled by the Ahmadnagar Sultan, Bahadur Nizam Shah II and he gave him Shivneri and Chakan. Chhatrapati Shivaji Bhonsale was born at the fort on 19 February 1630 (some accounts place it 1627), and spent his childhood there. Inside the fort is a small temple dedicated to the goddess Shivai Devi, after whom Chhatrapati Shivaji Bhonsale was named. The English traveller Fraze visited the fort in 1673 and found it invincible. According to his accounts the fort was well-stocked to feed thousand families for seven years. He also made a mention that the fort was then governed by a Brahmin turned Muslim. The fort was under the control of the Mughals after the Marathas and Shahu demanded it back in 1716. They regained the fort in 1762 and became a part of Ragunatha Rao. The fort came under the control of the British Rule in 1820 after the Third Anglo-Maratha War.</p> 
+</div>
+
+<div id="Rajmachi Fort" class="tabcontent">
+  <h3>Rajmachi Fort</h3>
+  <p>Rajmachi Fort (Killa) is one of the many historical forts in the rugged hills of Sahyadri mountains (Western Ghats). It consists of two twin fortresses Shriwardhan Ballekilla and Manaranjan Balekilla, with a wide machi (plateau) surrounding the two Balekillas. Udhewadi is a small village of about 22 houses situated on the machi, at the southern foot of Manaranjan Balekilla of Rajmachi Fort.Rajmachi Fort has two stronghold forts, Shrivardhan and Manaranjan. Visible from Mumbai Pune Expressway on right hand side of Borghat. It is a famous spot for trekking. Rajmachi Fort is 16 km trekking distance from Lonavala there are many routes to reach Rajmachi Fort. 
+  <p> Rajmachi Fort has many caves used by trekkers for night halt. Pre monsoon the forest around the forts is glowing with Fireflies at night. You can also trek towards Kondane Caves during monsoon and enjoy the beautiful caves and waterfall. Rajmachi Fort is located strategically overlooking Borghat an historical trade route.
+  </p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 

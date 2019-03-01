@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+{
+background-image:url('C:\Users\shree1\Desktop'); > 
+ <img src="is (2).jpg" alt="Italian Trulli";}
+
+
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+
+<h2>FORTS OF PUNE</h2>
+<p>Click here for the complete fort details</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Sinhagad Fort')" id="defaultOpen">Sinhagad Fort</button>
+  <button class="tablinks" onclick="openCity(event, 'Shivneri Fort')">Shivneri Fort</button>
+  <button class="tablinks" onclick="openCity(event, 'Raigad Fort')">Raigad Fort</button>
+</div>
+
+<div id="Sinhagad Fort" class="tabcontent">
+  <h3> Sinhagad Fort</h3>
+  <p>Sinhagad (also known as Sinhgad) is a hill fortress located at around 36 km southwest of the city of Pune, India. Some of the information available at this fort suggests that the fort could have been built 2000 years ago. The caves and the carvings in the Kaundinyeshwar temple stand as proofs for the same.
+
+Previously known as Kondhana, the fort had been the site of many battles, most notably the Battle of Sinhagad in 1670. Perched on an isolated cliff of the Bhuleswar range in the Sahyadri Mountains, the fort is situated on a hill about 760 metres above ground and 1,312 metres above mean sea level.[citation needed]
+
+The Sinhagad (Lion's Fort) was strategically built to provide natural protection due to its very steep slopes. The walls and bastions were constructed only at key places. There are two gates to enter the fort, the Kalyan Darwaza and Pune Darwaza which are positioned at the south east and north-east ends respectively.[1] The fort was also strategically located at the centre of a string of other Maratha occupied forts such as Rajgad Fort, Purandar Fort and Torna Fort. </p>
+</div>
+<div id="Shivneri Fort" class="tabcontent">
+  <h3>Shivneri Fort</h3>
+  <p>Shivneri is known to be a place of Buddhist dominion from the 1st century AD. The caves, rock-cut architecture and water system indicate presence of habitation from the 1st century. Shivneri got its name as it was under the possession of the Yadavas of Devagiri. This fort was mainly used to guard the old trading route from Desh to the port city of Kalyan. The place passed on to the Bahmani Sultanate after the weakening of Delhi Sultanate during the 15th century and it then passed on to the Ahmadnagar Sultanate in the 16th century. In 1595, a Maratha chief named Maloji Bhonsle, the grandfather of Chhatrapati Shivaji Bhosale, was enabled by the Ahmadnagar Sultan, Bahadur Nizam Shah II and he gave him Shivneri and Chakan. Chhatrapati Shivaji Bhonsale was born at the fort on 19 February 1630 (some accounts place it 1627), and spent his childhood there. Inside the fort is a small temple dedicated to the goddess Shivai Devi, after whom Chhatrapati Shivaji Bhonsale was named. The English traveller Fraze visited the fort in 1673 and found it invincible. According to his accounts the fort was well-stocked to feed thousand families for seven years. He also made a mention that the fort was then governed by a Brahmin turned Muslim. The fort was under the control of the Mughals after the Marathas and Shahu demanded it back in 1716. They regained the fort in 1762 and became a part of Ragunatha Rao. The fort came under the control of the British Rule in 1820 after the Third Anglo-Maratha War.</p> 
+</div>
+
+<div id="Raigad Fort" class="tabcontent">
+  <h3>Raigad Fort</h3>
+  <p>Raigad is a hill fort situated in the Mahad, Raigad district of Maharashtra, India. The Raigad Fort was seized by Chatrapati Shivaji Maharaj and made it his capital in 1674 when he was crowned as the King of a Maratha Kingdom which later developed into the Maratha Empire, eventually covering much of western and central India.[1]
+
+The fort rises 820 metres (2,700 ft) above the sea level and is located in the Sahyadri mountain range. There are approximately 1737 steps leading to the fort. The Raigad Ropeway, an aerial tramway exists to reach the top of the fort in 10 minutes. The fort was looted and destroyed by the British after it was captured in 1818.[citation needed]Chatrapati Shivaji Maharaj seized the fort in 1656, then known as the fort of Rairi from Raje Chandrarraoji More, The King of Jawli and a descendant of Chandragupta Maurya family. Chatrapati Shivaji renovated and expanded the fort of Rairi and renamed it as Raigad (King's Fort). It became the capital of Chatrapati Shivaji's Maratha kingdom.[citation needed]
+
+The villages of Pachad and Raigadwadi are located at the base of the Raigad fort. These two villages were considered very important during the Maratha rule in Raigad. The actual climb to the top of the Raigad fort starts from Pachad. During Chhatrapati Shivaji's rule, A cavalry of 10,000 was always kept on standby in Pachad village.[citation ne </p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
